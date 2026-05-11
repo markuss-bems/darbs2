@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <title>Mana WEB lapa</title>
+  <link rel="stylesheet" href="mansstils.css">
+</head>
+<body>
+  <h1>Marks WEB lapa</h1>
+  <img src="https://via.placeholder.com/300" width="300" height="300" alt="Attēls 300x300">
+  <p>Šī ir mana WEB lapa.</p>
+  <ul>
+    <li><a href="2lapa.htm">2lapa.htm</a></li>
+    <li><a href="3lapa.htm">3lapa.htm</a></li>
+    <li><a href="https://www.lu.lv/">Latvijas augstskola</a></li>
+    <li><a href="mailto:marks@example.com">E-pasts</a></li>
+  </ul>
+  <p id="time"></p>
+  <script>
+    function updateTime() {
+      document.getElementById('time').textContent = new Date().toLocaleString('lv-LV');
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+</body>
+</html>
